@@ -1,6 +1,6 @@
 import requests
 
-API_KEY = "fe2ee5bd1ee28ea089fce4af"
+API_KEY = "Your api key"
 AGENT_CUT = 8.7
 
 
