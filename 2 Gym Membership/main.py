@@ -1,18 +1,26 @@
+
+#DYNAMIC DISCOUNT
+#Fest discount 
+#fest = 50
+#PREPAID CHECK
+
 BASE_FEE = 1000
 
 COUPLE_DISCOUNT = 40      # percent
 CHILD_DISCOUNT = 60       # percent
 ADULT_DISCOUNT = 32      # percent
 SENIOR_DISCOUNT = 25      # percent
-
+FEST_DISCOUNT = 70
 
 def calculate_individual_discount(age):
+    
     if age < 18:
         return CHILD_DISCOUNT
     elif age <= 50:
         return ADULT_DISCOUNT
     else:
         return SENIOR_DISCOUNT
+
 
 
 def main():

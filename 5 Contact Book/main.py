@@ -2,6 +2,8 @@
 
 contacts = {}
 
+#SEARCH OPTION 
+#SAVE IT
 def menu():
     print("\n--- Contact Book ---")
     print("1. Add Contact")
@@ -96,7 +98,9 @@ def display_contacts(contacts):
         print("\nSaved Contacts:")
         for name, phone in contacts.items():
             print(name, ":", phone)
+            
 # Main Loop
+
 while True:
     menu()
     choice = input("Enter your choice: ")

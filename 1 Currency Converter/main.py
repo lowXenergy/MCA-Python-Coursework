@@ -1,11 +1,20 @@
 import requests
+from dotenv import load_dotenv
+import os
 
-API_KEY = "Your api key"
+load_dotenv()  # loads variables from .env
+
+api_key = os.getenv("API_KEY")
+# db_host = os.getenv("DB_HOST")
+
+# print(api_key)
+# print(db_host)
 AGENT_CUT = 8.7
 
+#WHAT IF PEOPLE DON'T KNOW THE COUNTRY CURRENCY NAME --> SEARCH THE COUNTRY AND THEN IT'S CURRENCY'NAME
 
 def convert_currency(amount, from_curr, to_curr):
-    url = f"https://v6.exchangerate-api.com/v6/{API_KEY}/latest/{from_curr}"
+    url = f"https://v6.exchangerate-api.com/v6/{api_key}/latest/{from_curr}"
 
     response = requests.get(url)
     data = response.json()
@@ -59,4 +68,5 @@ def main():
 
 
 # if __name__ == "__main__":
+
 main()
