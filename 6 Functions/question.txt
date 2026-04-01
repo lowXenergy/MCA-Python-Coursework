@@ -1,0 +1,10 @@
+Find the size of list when it's empty.
+Recursion.
+List compresion:
+        1. Make table with the help of list compresion taking input from the user.
+        2. Find out even and odd number without using steps and only using list compresion.
+        3. Make matrix and find out it's determinant and also find out it's rank order => Ask user how many rows and column he/she wants.
+
+Generate a list of emails (also include invalid emails eg ritesh , no gmail , no @ , .test etc) and then find out all the valid emails from the old list.
+
+Make a password validator and take input from the user.
