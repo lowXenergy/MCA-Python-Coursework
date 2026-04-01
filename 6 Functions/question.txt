@@ -8,3 +8,5 @@ List compresion:
 Generate a list of emails (also include invalid emails eg ritesh , no gmail , no @ , .test etc) and then find out all the valid emails from the old list.
 
 Make a password validator and take input from the user.
+
+
