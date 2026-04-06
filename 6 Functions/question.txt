@@ -10,3 +10,27 @@ Generate a list of emails (also include invalid emails eg ritesh , no gmail , no
 Make a password validator and take input from the user.
 
 
+List comprehension : The provided text explains **list comprehension**, a powerful Python feature designed to write more **efficient and readable code**. By utilizing this technique, programmers can significantly **reduce the number of lines** required for tasks like data transformation or filtering. The source illustrates this through examples such as **incrementing student grades** and calculating the **cubes of even numbers** within a specific range. Shifting from traditional loops to this **concise syntax** not only enhances the code's visual clarity but also boosts overall **performance and logic organization**. Ultimately, the author highlights that mastering list comprehension can improve **coding efficiency by up to 60%**, making it an essential skill for developers.
+
+[expression for item in iterable if condition]
+
+expression → what you want to output
+item → each element from the iterable
+iterable → list, tuple, string, range, etc.
+condition (optional) → filter elements
+
+1. Simple list creation
+
+nums = [1, 2, 3, 4]
+squares = [x**2 for x in nums]
+# [1, 4, 9, 16]
+
+2. With condition
+
+evens = [x for x in nums if x % 2 == 0]
+# [2, 4]
+
+3. Inline condition (if-else)
+
+result = ["even" if x % 2 == 0 else "odd" for x in nums]
+# ['odd', 'even', 'odd', 'even']
