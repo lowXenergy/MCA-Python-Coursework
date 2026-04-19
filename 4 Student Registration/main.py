@@ -41,7 +41,7 @@ def check_registration(course, day):
         return False, "Registration Failed: Only MCA students are allowed."
 
     if day > 25:
-        return False, "Registration Failed: The deadline was March 25."
+        return False, "Registration Failed: The deadline was May 25."
 
     if len(registered_students) >= MAX_SEATS:
         return False, "Registration Failed: All seats are full."
@@ -74,20 +74,31 @@ def main():
         choice = input("Enter your choice: ")
 
         if choice == "1":
-            print(f"\nSeats filled: {len(registered_students)}/{MAX_SEATS}")
+            # print(f"\nSeats filled: {len(registered_students)}/{MAX_SEATS}")
+            print(f"\nSeats filled: 100/100")
 
             if len(registered_students) >= MAX_SEATS:
                 print("Can't register. All seats are already filled.")
                 continue
 
-            roll = input("Enter Roll Number: ")
+            # roll = input("Enter Roll Number: ").strip()
+
+            # if roll_exists(roll):
+            #     print("This roll number is already registered.")
+            #     continue
+
+            roll = input("Enter Roll Number: ").strip()
+
+            if not roll.isdigit() or int(roll) < 0:
+                print("Invalid roll number. It must be a non-negative number.")
+                continue
 
             if roll_exists(roll):
                 print("This roll number is already registered.")
                 continue
 
-            name = input("Enter your name: ")
-            course = input("Enter your course: ")
+            name = input("Enter your name: ").strip()
+            course = input("Enter your course: ").strip().upper()
 
             day_input = input("Enter registration date: ")
             if not day_input.isdigit():
