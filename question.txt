@@ -34,3 +34,24 @@ evens = [x for x in nums if x % 2 == 0]
 
 result = ["even" if x % 2 == 0 else "odd" for x in nums]
 # ['odd', 'even', 'odd', 'even']
+
+
+#String
+#user input
+#which char u want to remove and then u have to remove it and then remove the string
+#ask what to remove and which where
+
+#WordP - inp string from the user
+#count no of word and char and exclude " "
+#no lib function should be used
+
+#same as above but with a file.
+#no of char, no of lines , no 
+
+#'I love my country'
+#Replace "" with -
+
+#'I love my country'
+#Remove all the odd position char ie I and my
+
+#even and odd ie love I country my
