@@ -1,0 +1,7 @@
+Hello user,
+
+Contact us at support@example.com or sales123@gmail.com  
+Call: +91-9876543210 or 98765 43210 or (0177) 2654321  
+
+Fake email: test.user@domain.co.in  
+Another number: 123-456-7890

@@ -6,7 +6,7 @@ load_dotenv()
 
 api_key = os.getenv("API_KEY")
 db_host = os.getenv("DB_HOST")
-''
+
 AGENT_CUT = 8.7
 
 # 1. Fail fast if API key is missing
@@ -115,3 +115,38 @@ def main():
 
 
 main()
+
+# import requests
+# from dotenv import load_dotenv
+# import os
+
+# load_dotenv()
+
+# API_KEY = os.getenv("API_KEY")
+# AGENT_CUT = 8.7
+
+# def convert_currency(amount, from_curr, to_curr):
+#     url = f"https://v6.exchangerate-api.com/v6/{API_KEY}/latest/{from_curr}"
+
+#     response = requests.get(url)
+#     data = response.json()
+
+#     if data["result"] != "success":
+#         return
+
+#     rate = data["conversion_rates"][to_curr]
+
+#     converted = amount * rate
+#     commission = converted * AGENT_CUT / 100
+#     final_amount = converted - commission
+
+#     print(f"\nConverted Amount: {converted:.2f} {to_curr}")
+#     print(f"Agent Cut: {commission:.2f} {to_curr}")
+#     print(f"Final Amount: {final_amount:.2f} {to_curr}")
+
+
+# amount = float(input("Enter amount: "))
+# from_curr = input("From currency: ").upper()
+# to_curr = input("To currency: ").upper()
+
+# convert_currency(amount, from_curr, to_curr)

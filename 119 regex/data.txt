@@ -1,0 +1,19 @@
+Aman Verma
+Email: [aman.verma@gmail.com](mailto:aman.verma@gmail.com)
+Phone: 9876543210
+
+Neha Gupta
+Email: [neha_gupta@outlook.com](mailto:neha_gupta@outlook.com)
+Phone: 8765432109
+
+Rohit Kumar
+Email: [rohit.kumar@yahoo.com](mailto:rohit.kumar@yahoo.com)
+Phone: 7654321098
+
+Customer Support
+Email: [support@abccompany.org](mailto:support@abccompany.org)
+Phone: 6543210987
+
+HR Department
+Email: [hr.team@xyzcorp.in](mailto:hr.team@xyzcorp.in)
+Phone: 9988776655
